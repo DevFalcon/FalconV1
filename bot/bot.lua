@@ -178,7 +178,7 @@ if not tostring(SUDO):match('%d+') then
     enabled_plugins = {
    "plugins",
     "msg_checks",
-    "supermang",
+    "groupmanger",
     "tools",
     "banhammer",
     "rebot",
