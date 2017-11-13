@@ -187,7 +187,7 @@ function check_markdown(text) --markdown escape ( when you need to escape markdo
 			output = string:gsub('_',[[\_]])
 		elseif string:match('*') then
 			output = string:gsub('*','\\*')
-		elseif str:match('`') then
+		elseif string:match('`') then
 			output = string:gsub('`','\\`')
 			
 		else
@@ -197,7 +197,7 @@ function check_markdown(text) --markdown escape ( when you need to escape markdo
 end
 
 function escape_markdown(name) --markdown escape ( only use it for name of users or groups , use it like : escape_markdown(msg.from.first_name)
-  str = name
+  string = name
   if string:match('_') then
    string = string:gsub('_','')
   end
@@ -207,7 +207,7 @@ function escape_markdown(name) --markdown escape ( only use it for name of users
 	if string:match('`') then
    string = string:gsub('`','')
   end
- return strin
+ return string
 end
 
 function is_sudo(msg)
@@ -522,9 +522,9 @@ if not is_gbanned(user_id) then
   end
   -- determine if table is empty
   if next(data[tostring(chat_id)]['banned']) == nil then --fix way
-					return "*لا يـوجد محظورين هنـا🚷❌*"
+					return "*🚩| ـۧلاٰ ېۄجډ ﻣۘﺣظَﯛړېڼ*"
 				end
-   message = '*قائمه المحظـورين🚷📝 : *\n\n'
+   message = '*🚩| قآئمۘه ٱﻟﺣظَړ : *\nᱻᱻᱻᱻᱻᱻᱻᱻᱼᱼᱹᱹᱹ🔅ᱹᱹᱹᱻᱻᱻᱻᱻᱻᱻᱻᱼᱼ\n'
   for k,v in pairs(data[tostring(chat_id)]['banned']) do
     message = message ..i.. '- '..v..' [' ..k.. '] \n'
    i = i + 1
@@ -540,9 +540,9 @@ end
   end
   -- determine if table is empty
   if next(data[tostring(chat_id)]['is_silent_users']) == nil then --fix way
-					return "*لا يـوجد مكتـومين هنـا🔇❌*"
+					return "*🚩| ـۧلاٰ ێۄﺟډ ٱﻟﻣۘڪتـﯛﻣێڼ*"
 				end
-   message = '*قائمه المكتومـين🔇📝 :*\n\n'
+   message = '*🚩| قآئمۘه ٱﻟڪِټمَ :*\nᱻᱻᱻᱻᱻᱻᱻᱻᱼᱼᱹᱹᱹ🔅ᱹᱹᱹᱻᱻᱻᱻᱻᱻᱻᱻᱼᱼ\n'
   for k,v in pairs(data[tostring(chat_id)]['is_silent_users']) do
     message = message ..i.. '- '..v..' [' ..k.. '] \n'
    i = i + 1
@@ -601,13 +601,13 @@ end
   end
   -- determine if table is empty
   if next(data[tostring(msg.chat.id)]['filterlist']) == nil then --fix way
-    return "*لا تـوجد كلمـات ممنوعـه✖️*"
+    return "*🚩| ـۧلاٰ ټۄﺟډ ڪِلمۘآٺ ﻣمڼۅعۧهَ*"
   end
   if not data[tostring(msg.chat.id)]['filterlist'] then
     data[tostring(msg.chat.id)]['filterlist'] = {}
     save_data(_config.moderation.data, data)
     end
-       filterlist = '*قائمـه الممنـوعات📝 :*\n\n'
+       filterlist = '*🚩| قآئمۘه ٱﻟﻣمڼۅعۧآټ :*\nᱻᱻᱻᱻᱻᱻᱻᱻᱼᱼᱹᱹᱹ🔅ᱹᱹᱹᱻᱻᱻᱻᱻᱻᱻᱻᱼᱼ\n'
  local i = 1
    for k,v in pairs(data[tostring(msg.chat.id)]['filterlist']) do
               filterlist = filterlist..'*'..i..'* - _'..check_markdown(k)..'_\n'
