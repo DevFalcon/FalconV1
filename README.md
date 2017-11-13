@@ -1,8 +1,8 @@
-# [ADVISOR-FALCON](https://t.me/XxMTxX)
+# [ADVISOR-FALCON](https://t.me/Team_Advior)
  
  
 ☺️🚩 كيفيه تنصيب سورس ديف فالكون
- توكن ومابي اخطاء وعربي وtg جديد
+ توكن ومابي اخطاء وعربي و مزخرف وقويtg جديد
 〰➖〰➖〰➖〰➖〰
 افتح ترمنـآل وخـلـي هذا الكود / وانتر
 
@@ -40,5 +40,5 @@ FALCON.sh
 ومبروك عليك البوت 
 〰➖〰➖〰➖〰➖〰
 
-🕵 - DevLoper : @Sudo_Sky
-🚩 - Channel : @XxMTxX
+🕵 - DevLoper : @IH_BI
+🚩 - Channel : @Team_Advisor
