@@ -9,11 +9,11 @@
 redis-server
 
 🚩 بـعـديـن خـلـي / وانتر
-git clone https://github.com/DevFalcon/Falcon.git
+git clone https://github.com/DevFalcon/FalconV1.git
 〰➖〰➖〰➖〰➖〰
 🚩 وراهه خـلـي هذا كود / وانتر
 
-cd Falcon
+cd FalconV1
 〰➖〰➖〰➖〰➖〰
 🚩 بـعـديـن خـلـي هاي / وانتر
 
