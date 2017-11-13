@@ -192,12 +192,12 @@ if not tostring(SUDO):match('%d+') then
 
 🚩 الاصدار - v1
 
-المطـورين🚩🕵- (@Sudo_Sky)
-(@Yi_i5)
+المطـورين🚩🕵- (@IH_BI)
+
 
 قناة السـورس🚩📡 - (@XxMTxX)
 
-🚩  - رابط الكيث هوب* https://github.com/DevFalcon/Falcon.git ]], 
+🚩  - رابط الكيث هوب* https://github.com/DevFalcon/FalconV1.git ]], 
   }
   serialize_to_file(config, './data/config.lua')
   print('saved config into ./data/config.lua')
